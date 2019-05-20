@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Батарейка</string>
+
+    <!--Battery activity-->
+    <string name="label_until_drained">ДО РАЗРЯДКИ БАТАРЕИ</string>
+    <string name="label_temperature">ТЕМПЕРАТУРА</string>
+    <string name="label_voltage">НАПРЯЖЕНИЕ</string>
+    <string name="label_condition">СОСТОЯНИЕ</string>
+    <string name="until_drained_value">%1$dч %2$dмин</string>
+    <string name="battery_condition_cold">Прохладное</string>
+    <string name="battery_condition_dead">Мертвое</string>
+    <string name="battery_condition_good">В норме</string>
+    <string name="battery_condition_over_voltage">Перенапряжение</string>
+    <string name="battery_condition_overheat">Перегрев</string>
+    <string name="battery_condition_unknown">Неизвестно</string>
+    <string name="battery_condition_failure">Неопределенная ошибка</string>
+
+</resources>

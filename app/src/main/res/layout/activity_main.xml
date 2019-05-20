@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+    <android.support.constraint.ConstraintLayout
+            android:paddingTop="76dp"
+            android:paddingBottom="76dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".BatteryMonitorActivity">
+
+        <com.example.battery.views.BatteryView
+                android:id="@+id/batteryView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="48dp"
+                android:layout_marginEnd="48dp"/>
+
+        <com.example.battery.views.TextWithLabelView
+                app:layout_constraintTop_toBottomOf="@+id/batteryView"
+                app:layout_constraintStart_toStartOf="@+id/batteryView"
+                android:id="@+id/twl_untilDrained"
+                app:label="@string/label_until_drained"
+                app:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"/>
+
+        <com.example.battery.views.TextWithLabelView
+                app:layout_constraintTop_toBottomOf="@+id/batteryView"
+                android:id="@+id/twl_temperature"
+                app:label="@string/label_temperature"
+                app:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/batteryView"
+                app:layout_constraintStart_toEndOf="@+id/twl_untilDrained"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_marginTop="29dp"/>
+
+        <com.example.battery.views.TextWithLabelView
+                app:layout_constraintTop_toBottomOf="@+id/twl_untilDrained"
+                android:id="@+id/twl_voltage"
+                app:label="@string/label_voltage"
+                app:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                app:layout_constraintStart_toStartOf="@+id/twl_untilDrained"/>
+
+        <com.example.battery.views.TextWithLabelView
+                app:layout_constraintTop_toBottomOf="@+id/twl_temperature"
+                android:id="@+id/twl_condition"
+                app:label="@string/label_condition"
+                app:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                app:layout_constraintStart_toStartOf="@+id/twl_temperature"/>
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TextWithLabelView">
+        <attr name="text" format="string" localization="suggested" />
+        <attr name="label" format="string" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="BatteryView">
+        <attr name="percent" format="integer" />
+    </declare-styleable>
+
+</resources>

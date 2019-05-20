@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2A313B</color>
+    <color name="colorPrimaryDark">#2A313B</color>
+    <color name="colorAccent">#F26D22</color>
+
+    <color name="white">@android:color/white</color>
+
+    <!--Battery activity-->
+    <color name="batteryActivityBackground">@color/colorPrimary</color>
+
+    <!--TextWithLabel customView-->
+    <color name="textColor">@color/white</color>
+    <color name="labelColor">@color/colorAccent</color>
+
+    <!--Battery customView-->
+    <color name="percentTextColor">@color/white</color>
+    <color name="battery_full">#388E3C</color>
+    <color name="battery_low">#D84315</color>
+    <color name="battery_middle">@color/colorAccent</color>
+
+</resources>

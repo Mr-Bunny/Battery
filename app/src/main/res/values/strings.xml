@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Battery</string>
+
+    <!--Battery activity-->
+    <string name="label_until_drained">UNTIL DRAINED</string>
+    <string name="label_temperature">TEMPERATURE</string>
+    <string name="label_voltage">VOLTAGE</string>
+    <string name="label_condition">CONDITION</string>
+    <string name="until_drained_value">%1$dh %2$dm</string>
+    <string name="voltage_value" translatable="false">%1$.3fV</string>
+    <string name="battery_condition_cold">Cold</string>
+    <string name="battery_condition_dead">Dead</string>
+    <string name="battery_condition_good">Good</string>
+    <string name="battery_condition_over_voltage">Over-Voltage</string>
+    <string name="battery_condition_overheat">Overheat</string>
+    <string name="battery_condition_unknown">Unknown</string>
+    <string name="battery_condition_failure">Unspecified Failure</string>
+
+    <!--Battery View-->
+    <string name="battery_percent" translatable="false">%1$d%%</string>
+
+</resources>
